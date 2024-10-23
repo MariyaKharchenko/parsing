@@ -35,7 +35,7 @@ try:
 
     #Запишем данные в csv файл.
     field_names = ['news_title', 'news_p']
-    with open("news.csv", "w", encoding='utf8') as w_file:
+    with open("new.csv", "w", encoding='utf8') as w_file:
         writer = csv.DictWriter(w_file, fieldnames=field_names)
         writer.writeheader()
         writer.writerows(news)
